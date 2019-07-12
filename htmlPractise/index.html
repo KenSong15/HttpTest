@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>This is title area</title>
+  <title>This is title area</title>
+  <link rel='stylesheet' href="css/basicStyle.css">
 </head>
+
 <body>
 
     <h1>1.heading</h1>
@@ -14,17 +16,59 @@
     <h6>This is a Heading</h6>
     <hr>
 
-    <h1>2.paragraph</h1>
-    <p>This is a paragraph.</p>
+    <h1>2.paragraph and font</h1>
+    <p style="color: blue" title="this is title">
+      This is a paragraph with break point.
+      <br>(break line)
+      <br>
+      <pre>This is prefixed format.</pre>
+      <q>this is quotation mark</q><br>
+      
+      <br><br>
+      
+      <abbr title="KenSong">K.S.</abbr><br>
+      <q>is this a question?</q><br>
+      <blockquote cite="kensong.com">this is a blockquote with cita</blockquote>
+      <address>
+        should<br>
+        write<br>
+        an<br>
+        address<br>
+      </address>
+      <cite>this is a cite</cite><br>
+      <bdo dir="rtl">猪是念来过倒</bdo><br>
+      <!-- comment here --><p>we have comment here.</p>
+
+    </p>
+
+    <p style="background-color: burlywood">background changed</p>
+    <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">font changed</p>
+    <p>fontstyle: <br>
+      <i>italic</i>           <em>emphasize</em><br>
+      <b>bold</b>             <strong>strong</strong><br>
+      <mark>highlight</mark>  <small>small</small><br>
+      <del>deleted</del>      <ins>inserted</ins><br>
+      <sub>subscript</sub>    <sup>superscript</sup><br>
+    
+    </p>
+
+
     <hr>
 
     <h1>3.link</h1>
     <p>This is a <a href="http://www.google.com">link</a>.</p>
+    <a href="https://www.w3schools.com/html/" target="_blank">open in a new tap</a> 
+    <p>Locked in a frame? <a href="https://www.w3schools.com/html/" target="_top">Click here! (dont know what this is)</a></p>
+    <p><a href="index.html">to the current page or top</a></p>
     <hr>
 
-    <h1>4.image</h1>
+    <h1 id="C4">4.image</h1>
     <p>The following will be an image.</p>
     <img src="res/img/Business.png" alt="a business image" style="width: 50;height: 50 ">
+    <a href="index.html">
+        <img src="res/img/Calculator.png" alt="to top" style="float: right; width:50;height:50;border:0;">
+        (---->>>>image button)  it can also make different parts of image as a clickable button
+      </a>
     <hr>
 
     <h1>5.button</h1>
@@ -46,6 +90,118 @@
       </ol>
     <hr>
 
+    <h1>7.color</h1>
+      <h3 style="background-color:#ff0000;">#ff0000</h3>
+      <h3 style="background-color:#0000ff;">#0000ff</h3>
+      <h3 style="background-color:#3cb371;">#3cb371</h3>
+      <h3 style="background-color:#ee82ee;">#ee82ee</h3>
+      <h3 style="background-color:#ffa500;">#ffa500</h3>
+      <h3 style="background-color:#6a5acd;">#6a5acd</h3>
+    <hr>
+
+    <h1>8.css</h1>
+      <p id="p01">try css</p>
+      <p class="error">error message should be red</p>
+      <a class="test" href="#">changed</a>
+      <p><a href="#C4">Jump to 4.image</a></p>
+    <hr>
+
+    <h1>9.table</h1>
+    <table style="width:100%" >
+      <caption>this is the caption of a table</caption>
+        <tr>
+          <th>Name</th>
+          <th colspan="2">Telephone</th>
+        </tr>
+        <tr>
+          <td>Bill Gates</td>
+          <td>55577854</td>
+          <td>55577855</td>
+        </tr>
+      </table>
+      
+      <br>
+      
+      <table>
+          <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+          </tr>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+          </tr>
+          <tr>
+            <td>Ernst Handel</td>
+            <td>Roland Mendel</td>
+            <td>Austria</td>
+          </tr>
+          <tr>
+            <td>Island Trading</td>
+            <td>Helen Bennett</td>
+            <td>UK</td>
+          </tr>
+          <tr>
+            <td>Laughing Bacchus Winecellars</td>
+            <td>Yoshi Tannamuri</td>
+            <td>Canada</td>
+          </tr>
+          <tr>
+            <td>Magazzini Alimentari Riuniti</td>
+            <td>Giovanni Rovelli</td>
+            <td>Italy</td>
+          </tr>
+        </table>
+    <hr>
+
+    <h1>10.block</h1>
+      <div style="border: 1px solid black">Hello World</div>
+      <p>The DIV element is a block element, and will always start on a new line and take up the full width available (stretches out to the left and right as far as it can).</p>
+      <!--Block level elements in HTML:
+        <address><article><aside><blockquote><canvas>
+          <dd><div><dl><dt><fieldset><figcaption><figure>
+            <footer><form><h1>-<h6><header><hr><li><main>
+              <nav><noscript><ol><a><pre><section><table>
+                <tfoot><ul><video>-->
+
+      <p>This is an inline span <span style="border: 1px solid black">Hello World</span> element inside a paragraph.</p>
+      <!--Inline elements in HTML:
+        <a><abbr><acronym><b><bdo><big><br><button><cite>
+          <code><dfn><em><i><img><input><kbd><label><map>
+            <object><output><q><samp><script><select><small>
+              <span><strong><sub><sup><textarea><time><tt><var>-->
+    <hr>
+
+    <h1>11.class and id</h1>
+      <h2>Difference Between Class and ID</h2>
+      <p>An HTML page can only have one unique id applied to one specific element, while a class name can be applied to multiple elements.</p>
+
+      <!-- A unique element -->
+      <h1 id="myHeader">My Cities</h1>
+
+      <!-- Multiple similar elements -->
+      <h2 class="city">London</h2>
+      <p>London is the capital of England.</p>
+
+      <h2 class="city">Paris</h2>
+      <p>Paris is the capital of France.</p>
+
+      <h2 class="city">Tokyo</h2>
+      <p>Tokyo is the capital of Japan.</p>
+
+      <h1>11.class and id</h1>
+        <h2>Iframe - Target for a Link</h2>
+
+        <iframe height="300px" width="100%" src="index.html" name="iframe_a"></iframe>
+        
+        <a><a href="https://www.qq.com" target="iframe_a">to qq</a></a>
 
 </body>
 </html>

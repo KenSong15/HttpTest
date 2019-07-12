@@ -1,0 +1,66 @@
+#p01 {
+    margin: 50px;
+    padding: 30px;
+    border: 1px solid powderblue;
+}
+
+p.error {
+    color: red
+}
+
+a.test:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+a.test:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.test:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a.test:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+    border: 1px solid #dddddd;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+table {
+    font-family: arial, sans-serif;
+    width: 100%;
+}
+
+#myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Style all elements with the class name "city" */
+  .city {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+  } 
+  
+  
+  
