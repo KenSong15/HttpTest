@@ -63,12 +63,18 @@
     <hr>
 
     <h1 id="C4">4.image</h1>
-    <p>The following will be an image.</p>
-    <img src="res/img/Business.png" alt="a business image" style="width: 50;height: 50 ">
-    <a href="index.html">
-        <img src="res/img/Calculator.png" alt="to top" style="float: right; width:50;height:50;border:0;">
-        (---->>>>image button)  it can also make different parts of image as a clickable button
-      </a>
+      <p>The following will be an image.</p>
+      <img src="res/img/Business.png" alt="a business image" style="width: 50;height: 50 ">
+      <a href="index.html">
+          <img src="res/img/Calculator.png" alt="to top" style="float: right; width:50;height:50;border:0;">
+          (---->>>>image button)  it can also make different parts of image as a clickable button
+        </a>
+      <picture>
+        <source srcset="res/img/Calculator.png" media="(max-width: 600px)">
+        <source srcset="res/img/Card_file.png" media="(max-width: 00px)">
+        <source srcset="res/img/Company.png">
+        <img src="res/img/Business.png" alt="initial">
+      </picture>
     <hr>
 
     <h1>5.button</h1>
@@ -195,13 +201,21 @@
 
       <h2 class="city">Tokyo</h2>
       <p>Tokyo is the capital of Japan.</p>
+      <hr>
 
-      <h1>11.class and id</h1>
+      <h1>12.iframe</h1>
         <h2>Iframe - Target for a Link</h2>
 
         <iframe height="300px" width="100%" src="index.html" name="iframe_a"></iframe>
         
-        <a><a href="https://www.qq.com" target="iframe_a">to qq</a></a>
+        <a><a href="https://www.qq.com" target="iframe_a">to qq</a></a><hr>
+
+      <h1>13.head</h1>
+        <h2>about title base link meta script style</h2>
+        <h2>title make the name of this page on the tag top</h2>
+        <h2>style can make the style information for a single HTML page</h2>
+        <h2>link to external style sheet: rel:"stylesheet", href lead postion</h2>
+      <hr>
 
 </body>
 </html>
