@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>JavaScript tester</title>
+
+        <!--script file list-->
+        <script src="js/light.js"></script>
+    </head>
+
+    <!-- sample testing block
+        <div>
+        <h1>#.(topic)</h1>
+        <div>(result field)</div>
+        <button onclick="(function())">(fire button)</button>
+        <p>DES: (description)</p><hr>
+    </div>
+    -->
 <body>
 
-<script src="js/light.js">
-</script>
+    <div>
+        <h1>1.light on </h1>
+        <img id="myImage" src="res/pic_bulboff.gif" width="100" height="180">
+        <div>
+            <button type="button" onclick="light(1)">Light On</button>
+            <button type="button" onclick="light(0)">Light Off</button>
+            <p>DES: to control the light on and off</p>
+        </div><hr>
+    </div>
 
-<img id="myImage" src="res/pic_bulboff.gif" width="100" height="180">
 
-<p>
-<button type="button" onclick="light(1)">Light On</button>
-<button type="button" onclick="light(0)">Light Off</button>
-</p>
+
+
+    <div>
+        <h1>2.display block</h1>
+        <div>
+            <p id="demo" style="display:none">show~</p>
+        </div>
+        <button onclick="show()"> click me to show</button>
+        <p>DES: click to display a block</p><hr>
+    </div>
 
 </body>
 </html>
