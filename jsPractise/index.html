@@ -5,6 +5,11 @@
 
         <!--script file list-->
         <script src="js/light.js"></script>
+        <script src="js/output.js"></script>
+        <script src="js/arrayAndObject.js"></script>
+        <script src="js/checkInput.js"></script>
+        <script src="js/class.js"></script>
+        <script src="js/accessJson.js"></script>
     </head>
 
     <!-- sample testing block
@@ -13,7 +18,7 @@
         <div>(result field)</div>
         <button onclick="(function())">(fire button)</button>
         <p>DES: (description)</p><hr>
-    </div>
+        </div>
     -->
 <body>
 
@@ -37,6 +42,64 @@
         </div>
         <button onclick="show()"> click me to show</button>
         <p>DES: click to display a block</p><hr>
+    </div>
+
+    <div>
+        <h1>3.output</h1>
+        <div>
+            <p id="3p1">(going to be changed)</p>
+            <button onclick="outputToElement()">click me to show</button>
+        </div>
+
+        <button onclick="outputToConsole()">click me to log on console</button><br>
+
+        <button onclick="outputToAlart()">click me to show alart</button><br>
+
+        <button onclick="outputToRewrite()">click me to rewrite the file</button>
+        
+        <p>DES: output method of javascript</p><hr>
+    </div>
+
+    <div>
+        <h1>4.array and object declearation</h1>
+        <div>
+            <p id="4p1">(array show case)</p>
+            <button onclick="showArray()">click me to show array content</button>
+        </div>
+
+        <div>
+            <p id="4p2">(object show case)</p>
+            <button onclick="showObject()">click me to show object attribute</button>
+        </div>
+
+        <p>DES: use [] to declear array, {}to declear object</p><hr>
+    </div>
+
+    <div>
+        <h1>5.check the input</h1>
+        <p>Please input a number between 5 and 10:</p>
+        <input id="demo" type="text">
+        <button type="button" onclick="myFunction()">Test Input</button>
+        <p id="5p1"></p>
+        <p>DES: the javascript function will check if the input match the requirement</p><hr>
+    </div>
+
+    <div>
+        <h1>6.class and its getter and setter</h1>
+        <p>the button will show you the detail of a car.</p>
+
+        <button type="button" onclick="showCar()">show car</button>
+        <p id="6p1"></p>
+        <p>DES: this will show the detail of car and its brand</p><hr>
+    </div>
+
+    <div>
+        <h1>7.parse and access json</h1>
+        <p>the button will show you the info of a json file.</p>
+
+        <button type="button" onclick="showJson()">show json</button>
+        <p id="7p1"></p>
+        <p>DES: this will show the inner information of a json file</p><hr>
     </div>
 
 </body>
